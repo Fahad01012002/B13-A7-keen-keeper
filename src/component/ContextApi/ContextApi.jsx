@@ -8,16 +8,17 @@ const ContextApi = ({ children }) => {
 
     const [friend, setFriend] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [timeline , setTimeline] = useState([]);
+    const [timeline, setTimeline] = useState([]);
 
     useEffect(() => {
         fetch('/Data.json')
             .then(res => res.json())
-            .then(data => setFriend(data));
-
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
+            .then(data => {
+                setTimeout(() => {
+                    setFriend(data);
+                    setLoading(false);
+                }, 1500);
+            });
     }, []);
 
     const value = {

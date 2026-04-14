@@ -5,29 +5,41 @@ import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash, Video } from "l
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
+import { HashLoader } from "react-spinners";
 
 const CardDetailsPage = () => {
 
-    const { friend , timeline , setTimeline } = useContext(AppContext);
+    const { friend, timeline, setTimeline, loading } = useContext(AppContext);
     const { id } = useParams();
 
+    if (loading) {
+    return (
+        <div className="h-screen flex justify-center items-center">
+            <span className="loading loading-bars loading-xl"></span>
+        </div>
+    );
+}
 
     const selectedCard = friend?.find(c => String(c.id) === String(id));
+
+    if (!selectedCard) {
+        return <h1 className="text-center mt-10 text-red-500">Contact not found!</h1>;
+    }
 
 
     const { name, picture, email, status, tags, bio, days_since_contact, next_due_date, goal } = selectedCard;
 
-    const handleTimeLine = (contactId , contactName , actionType) => {
+    const handleTimeLine = (contactId, contactName, actionType) => {
 
         const newEntry = {
-            id : Date.now(),
-            contactId : contactId,
-            contactName : contactName,
-            actionType : actionType,
-            timestamp : new Date().toLocaleString()
+            id: Date.now(),
+            contactId: contactId,
+            contactName: contactName,
+            actionType: actionType,
+            timestamp: new Date().toLocaleString()
         };
-        
-        setTimeline(prev => [newEntry , ...prev]);
+
+        setTimeline(prev => [newEntry, ...prev]);
 
     }
 
@@ -105,9 +117,9 @@ const CardDetailsPage = () => {
                 <div className="p-6 border border-gray-300 shadow-lg rounded-lg">
                     <h2 className="text-[20px] font-semibold text-[#244d3f] mb-4">Quick Check-In</h2>
                     <div className="grid grid-cols-3 gap-3">
-                        <button onClick={() => handleTimeLine(selectedCard.id , selectedCard.name , 'call')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><PhoneCall size={20} /> Call</button>
-                        <button onClick={() => handleTimeLine(selectedCard.id , selectedCard.name , 'text')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><MessageSquareMore />Text</button>
-                        <button onClick={() => handleTimeLine(selectedCard.id , selectedCard.name , 'video')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><Video />Video</button>
+                        <button onClick={() => handleTimeLine(selectedCard.id, selectedCard.name, 'call')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><PhoneCall size={20} /> Call</button>
+                        <button onClick={() => handleTimeLine(selectedCard.id, selectedCard.name, 'text')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><MessageSquareMore />Text</button>
+                        <button onClick={() => handleTimeLine(selectedCard.id, selectedCard.name, 'video')} className="flex items-center border border-gray-200 rounded-lg bg-gray-100 flex-col font-semibold gap-2 p-3 cursor-pointer"><Video />Video</button>
                     </div>
                 </div>
 
@@ -129,7 +141,7 @@ const CardDetailsPage = () => {
                                     <div key={entry.id} className="border border-gray-300 mb-4 px-6 py-2 flex justify-between items-center mt-6 rounded-lg shadow-sm">
                                         <div className="flex items-center gap-5">
                                             {
-                                                entry.actionType === 'text' ? <MessageSquareMore /> : 
+                                                entry.actionType === 'text' ? <MessageSquareMore /> :
                                                     entry.actionType === 'call' ? <PhoneCall /> : <Video />
                                             }
                                             <div>

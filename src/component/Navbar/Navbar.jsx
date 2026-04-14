@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import NavbarLink from "../ui/NavbarLink";
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
         <div className="border-b border-gray-300 shadow-sm">
             <div className='w-11/12 mx-auto flex justify-between items-center mt-4 mb-3'>
                 <div>
-                    <h2 className='text-[24px]'><span className='font-bold text-[#1f2937]'>Keen</span>Keeper</h2>
+                    <Link href='/' className='text-[24px]'><span className='font-bold text-[#1f2937]'>Keen</span>Keeper</Link>
                 </div>
 
                 <div>
