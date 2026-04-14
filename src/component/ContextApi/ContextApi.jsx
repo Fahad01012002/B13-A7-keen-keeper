@@ -8,6 +8,7 @@ const ContextApi = ({ children }) => {
 
     const [friend, setFriend] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [timeline , setTimeline] = useState([]);
 
     useEffect(() => {
         fetch('/Data.json')
@@ -24,6 +25,8 @@ const ContextApi = ({ children }) => {
         setFriend,
         loading,
         setLoading,
+        timeline,
+        setTimeline
     };
 
 

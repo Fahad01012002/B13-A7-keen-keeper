@@ -41,7 +41,7 @@ export default function Home() {
       <div className='divider mb-10'></div>
 
       <div>
-        <h2 className='text-[24px] font-semibold'>Your Friends</h2>
+        <h2 className='text-[24px] font-semibold mb-4'>Your Friends</h2>
         <CardUi />
       </div>
 

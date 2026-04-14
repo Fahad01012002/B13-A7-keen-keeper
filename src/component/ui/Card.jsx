@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Card = ({ item }) => {
-    const { name, picture, days_since_contact, status, tags } = item;
+    const { name, picture, days_since_contact, status, tags , id } = item;
 
     return (
-        <div className='flex flex-col justify-between items-center space-y-2 shadow-lg p-7 border border-gray-200 rounded-lg'>
+        <Link key={id} href={`/card-details/${id}`} className='flex flex-col justify-between items-center space-y-2 shadow-lg p-7 border border-gray-200 rounded-lg'>
             <Image
                 src={picture}
                 alt='name'
@@ -25,14 +26,14 @@ const Card = ({ item }) => {
                     })
                 }
             </div>
-            <p className={`rounded-full px-4 py-1 ${status === 'active' ? 'bg-[#244d3f] text-white' :
-                status === 'overdue' ? 'bg-[#ef4444] text-white' :
+            <p className={`rounded-full px-4 py-1 ${status === 'ACTIVE' ? 'bg-[#244d3f] text-white' :
+                status === 'OVERDUE' ? 'bg-[#ef4444] text-white' :
                     'bg-[#efad44] text-white'
                 }`}>
                 {status}
             </p>
 
-        </div>
+        </Link>
     );
 };
 
