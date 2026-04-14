@@ -5,10 +5,10 @@
         "picture": "https://randomuser.me/api/portraits/men/1.jpg",
         "email": "john@example.com",
         "days_since_contact": 12,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "college",
-            "close friend"
+            "COLLEGE",
+            "CLOSE FRIEND"
         ],
         "bio": "Met in university. Love hiking together.",
         "goal": 14,
@@ -20,10 +20,10 @@
         "picture": "https://randomuser.me/api/portraits/women/2.jpg",
         "email": "sarah@example.com",
         "days_since_contact": 5,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "work",
-            "mentor"
+            "WORK",
+            "MENTOR"
         ],
         "bio": "My former manager. Very inspiring person.",
         "goal": 7,
@@ -35,10 +35,10 @@
         "picture": "https://randomuser.me/api/portraits/men/3.jpg",
         "email": "michael@example.com",
         "days_since_contact": 21,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "family",
-            "cousin"
+            "FAMILY",
+            "COUSIN"
         ],
         "bio": "Grew up together. Lives in California now.",
         "goal": 14,
@@ -50,10 +50,10 @@
         "picture": "https://randomuser.me/api/portraits/women/4.jpg",
         "email": "emma@example.com",
         "days_since_contact": 2,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "college",
-            "best friend"
+            "COLLEGE",
+            "BEST FRIEND"
         ],
         "bio": "Roommate from university. Loves coffee.",
         "goal": 7,
@@ -65,10 +65,10 @@
         "picture": "https://randomuser.me/api/portraits/men/5.jpg",
         "email": "david@example.com",
         "days_since_contact": 30,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "work",
-            "colleague"
+            "WORK",
+            "COLLEAGUE"
         ],
         "bio": "Software engineer. Plays guitar.",
         "goal": 21,
@@ -80,10 +80,10 @@
         "picture": "https://randomuser.me/api/portraits/women/6.jpg",
         "email": "lisa@example.com",
         "days_since_contact": 8,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "Close friend",
-            "gym"
+            "CLOSE FRIEND",
+            "GYM"
         ],
         "bio": "My workout partner. Very energetic.",
         "goal": 10,
@@ -95,10 +95,10 @@
         "picture": "https://randomuser.me/api/portraits/men/7.jpg",
         "email": "james@example.com",
         "days_since_contact": 45,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "Family",
-            "Brother"
+            "FAMILY",
+            "BROTHER"
         ],
         "bio": "Younger brother. Loves video games.",
         "goal": 30,
@@ -110,10 +110,10 @@
         "picture": "https://randomuser.me/api/portraits/women/8.jpg",
         "email": "maria@example.com",
         "days_since_contact": 3,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "College",
-            "Study buddy"
+            "COLLEGE",
+            "STUDY BUDDY"
         ],
         "bio": "Studied computer science together.",
         "goal": 7,
@@ -125,10 +125,10 @@
         "picture": "https://randomuser.me/api/portraits/men/9.jpg",
         "email": "robert@example.com",
         "days_since_contact": 18,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "Work",
-            "Project lead"
+            "WORK",
+            "PROJECT LEAD"
         ],
         "bio": "Team lead. Very supportive.",
         "goal": 14,
@@ -140,10 +140,10 @@
         "picture": "https://randomuser.me/api/portraits/women/10.jpg",
         "email": "jennifer@example.com",
         "days_since_contact": 1,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "Close friend",
-            "Neighbor"
+            "CLOSE FRIEND",
+            "NEIGHBOR"
         ],
         "bio": "Lives next door. We cook together.",
         "goal": 5,
@@ -155,10 +155,10 @@
         "picture": "https://randomuser.me/api/portraits/men/11.jpg",
         "email": "thomas@example.com",
         "days_since_contact": 25,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "College",
-            "Roommate"
+            "COLLEGE",
+            "ROOMMATE"
         ],
         "bio": "My college roommate. Still in touch.",
         "goal": 21,
@@ -170,10 +170,10 @@
         "picture": "https://randomuser.me/api/portraits/women/12.jpg",
         "email": "amanda@example.com",
         "days_since_contact": 6,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "work",
-            "designer"
+            "WORK",
+            "DESIGNER"
         ],
         "bio": "Graphic designer. Very creative.",
         "goal": 10,
@@ -185,10 +185,10 @@
         "picture": "https://randomuser.me/api/portraits/men/13.jpg",
         "email": "chris@example.com",
         "days_since_contact": 35,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "family",
-            "uncle"
+            "FAMILY",
+            "UNCLE"
         ],
         "bio": "My favorite uncle. Tells great stories.",
         "goal": 30,
@@ -200,10 +200,10 @@
         "picture": "https://randomuser.me/api/portraits/women/14.jpg",
         "email": "jessica@example.com",
         "days_since_contact": 4,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "close friend",
-            "travel"
+            "CLOSE FRIEND",
+            "TRAVEL"
         ],
         "bio": "We travel together. Loves photography.",
         "goal": 7,
@@ -215,10 +215,10 @@
         "picture": "https://randomuser.me/api/portraits/men/15.jpg",
         "email": "daniel@example.com",
         "days_since_contact": 14,
-        "status": "due_soon",
+        "status": "DUE SOON",
         "tags": [
-            "work",
-            "intern"
+            "WORK",
+            "INTERN"
         ],
         "bio": "New graduate. Very eager to learn.",
         "goal": 14,
@@ -230,10 +230,10 @@
         "picture": "https://randomuser.me/api/portraits/women/16.jpg",
         "email": "ashley@example.com",
         "days_since_contact": 9,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "college",
-            "sorority"
+            "COLLEGE",
+            "SORORITY"
         ],
         "bio": "Sorority sister. We meet monthly.",
         "goal": 10,
@@ -245,10 +245,10 @@
         "picture": "https://randomuser.me/api/portraits/men/17.jpg",
         "email": "matthew@example.com",
         "days_since_contact": 60,
-        "status": "overdue",
+        "status": "OVERDUE",
         "tags": [
-            "family",
-            "father"
+            "FAMILY",
+            "FATHER"
         ],
         "bio": "My dad. Calls every Sunday.",
         "goal": 7,
@@ -260,10 +260,10 @@
         "picture": "https://randomuser.me/api/portraits/women/18.jpg",
         "email": "olivia@example.com",
         "days_since_contact": 7,
-        "status": "due_soon",
+        "status": "DUE SOON",
         "tags": [
-            "close friend",
-            "book club"
+            "CLOSE FRIEND",
+            "BOOK CLUB"
         ],
         "bio": "We started a book club together.",
         "goal": 7,
@@ -275,10 +275,10 @@
         "picture": "https://randomuser.me/api/portraits/men/19.jpg",
         "email": "andrew@example.com",
         "days_since_contact": 11,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "work",
-            "tech lead"
+            "WORK",
+            "TECH LEAD"
         ],
         "bio": "Senior developer. Mentors me.",
         "goal": 14,
@@ -290,10 +290,10 @@
         "picture": "https://randomuser.me/api/portraits/women/20.jpg",
         "email": "sophia@example.com",
         "days_since_contact": 3,
-        "status": "active",
+        "status": "ACTIVE",
         "tags": [
-            "college",
-            "best friend"
+            "COLLEGE",
+            "BEST FRIEND"
         ],
         "bio": "Known her since kindergarten.",
         "goal": 5,
