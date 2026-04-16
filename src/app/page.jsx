@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='grid grid-cols-4 gap-5 mb-10'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-5 mb-10'>
           <div className='flex flex-col justify-center items-center p-8 shadow-lg rounded-lg'>
             <h2 className='text-[32px] font-semibold'>20</h2>
             <p className='text-[18px]'>Total Friends</p>
