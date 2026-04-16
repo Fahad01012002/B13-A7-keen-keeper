@@ -27,13 +27,13 @@ const Navbar = () => {
 
     return (
         <div className="border-b border-gray-300 shadow-sm">
-            <div className='w-11/12 mx-auto flex justify-between items-center mt-4 mb-3'>
+            <div className='w-11/12 mx-auto md:flex lg:flex text-center justify-between items-center mt-4 mb-3'>
                 <div>
                     <Link href='/' className='text-[24px]'><span className='font-bold text-[#1f2937]'>Keen</span>Keeper</Link>
                 </div>
 
                 <div>
-                    <ul className='flex space-x-4'>
+                    <ul className='flex justify-center sm:flex text-center space-x-4'>
                         {
                             links.map((link) => (
                                 <NavbarLink key={link.id} link={link} />

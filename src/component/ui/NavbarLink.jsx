@@ -12,7 +12,7 @@ const NavbarLink = ({ link }) => {
     const IconComponent = Icons[link.icon];
 
     return (
-        <li>
+        <div className=''>
             <Link 
                 href={link.href}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors duration-200 ${
@@ -24,7 +24,7 @@ const NavbarLink = ({ link }) => {
                 {IconComponent && <IconComponent size={18} />}
                 {link.name}
             </Link>
-        </li>
+        </div>
     );
 };
 

@@ -45,8 +45,8 @@ const CardDetailsPage = () => {
     const contactTimeline = timeline?.filter(entry => String(entry.contactId) === String(id));
 
     return (
-        <div className="grid grid-cols-6 gap-5 mb-20 mt-20 w-11/12 mx-auto">
-            <div className="col-span-2">
+        <div className="lg:grid lg:grid-cols-6 md:grid md:grid-cols-4 gap-5 mb-20 mt-20 w-11/12 mx-auto">
+            <div className="md:col-span-2">
                 <div className="p-6 flex flex-col justify-center items-center border border-gray-300 shadow-lg space-y-3 rounded-lg mb-5">
                     <Image
                         src={picture}
@@ -79,7 +79,7 @@ const CardDetailsPage = () => {
                     <p className="font-semibold text-[14px]">Email : {email}</p>
                 </div>
 
-                <div className="text-center space-y-3">
+                <div className="text-center space-y-3 mb-5">
                     <h2 className="flex items-center gap-2 justify-center border border-gray-300 py-3 font-semibold rounded-lg"><BellRing size={17} />Snooze 2 weeks</h2>
                     <h2 className="flex items-center gap-2 justify-center border border-gray-300 py-3 font-semibold rounded-lg"><Archive size={17} />Archive</h2>
                     <h2 className="flex items-center gap-2 justify-center border border-gray-300 py-3 font-semibold rounded-lg text-red-500"><Trash size={17} />Delete</h2>
@@ -87,8 +87,8 @@ const CardDetailsPage = () => {
 
             </div>
 
-            <div className="col-span-4 space-y-6">
-                <div className="grid grid-cols-3 gap-5">
+            <div className="lg:col-span-4 md:col-span-2 space-y-6">
+                <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-5">
                     <div className="text-center rounded-lg px-4 py-8 border border-gray-300 shadow-lg">
                         <h2 className="text-[30px] text-[#244d3f] font-semibold">{days_since_contact}</h2>
                         <p className="text-[18px] text-[#244d3f]">Days Since Contact</p>
