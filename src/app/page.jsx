@@ -4,8 +4,6 @@ import * as Icons from 'lucide-react';
 
 export default function Home() {
 
-  
-
   return (
     <div className="w-11/12 mx-auto mt-20">
       <div className='text-center'>

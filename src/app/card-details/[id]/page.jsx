@@ -5,7 +5,6 @@ import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash, Video } from "l
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
-import { HashLoader } from "react-spinners";
 
 const CardDetailsPage = () => {
 
