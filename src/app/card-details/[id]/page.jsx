@@ -5,6 +5,7 @@ import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash, Video } from "l
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 
 const CardDetailsPage = () => {
 
@@ -29,6 +30,16 @@ const CardDetailsPage = () => {
     const { name, picture, email, status, tags, bio, days_since_contact, next_due_date, goal } = selectedCard;
 
     const handleTimeLine = (contactId, contactName, actionType) => {
+
+        if(actionType === 'call'){
+            toast.success('Call history added');
+        }
+        else if(actionType === 'text'){
+            toast.success('Text history added');
+        }
+        else{
+            toast.success('Videocall history added');
+        }
 
         const newEntry = {
             id: Date.now(),
